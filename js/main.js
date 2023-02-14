@@ -27,6 +27,7 @@ function attemptsNumber() {
 
 function handleCompare() {
     const userChoice = parseInt(choiceEl.value);
+    console.log(userChoice);
     if (userChoice > randomNumber && userChoice <= 100) {
         printClue('Demasiado alto');
     } else if (userChoice < randomNumber && userChoice >= 1) {
