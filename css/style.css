@@ -26,7 +26,7 @@
 	height: 30px;
 	background-color: #0098f0;
 	border: #0098f0;
-	border-radius: 4px;
+	border-radius: 6px;
 	color: white;
 	font-size: 16px;
 	font-weight: 600;
@@ -35,7 +35,7 @@
 .choice {
 	width: 200px;
 	height: 30px;
-	border-radius: 4px;
+	border-radius: 6px;
 	background-color: rgba(226, 225, 225);
 	border-color: rgba(226, 225, 225);
 	font-size: 16px;
