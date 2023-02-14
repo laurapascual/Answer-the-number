@@ -13,11 +13,11 @@ function getRandomNumber(max) {
 console.log('Mi número aleatorio es: ' + randomNumber);
 
 function printClue(message) {
-    clueEl.value = message;
+    clueEl.innerHTML = message;
 }
 
 function printAttempts(number) {
-    attemptsEl.value = number;
+    attemptsEl.innerHTML = number;
 }
 
 function attemptsNumber() {
@@ -26,7 +26,7 @@ function attemptsNumber() {
 }
 
 function handleCompare() {
-    const userChoice = parseInt(choiceEl.value);
+    const userChoice = choiceEl.value;
     if (userChoice > randomNumber && userChoice <= 100) {
         printClue('Demasiado alto');
     } else if (userChoice < randomNumber && userChoice >= 1) {
@@ -42,6 +42,5 @@ function handleBtnClick(event) {
     handleCompare();
     attemptsNumber();
 }
-
 
 btnEl.addEventListener('click', handleBtnClick);
