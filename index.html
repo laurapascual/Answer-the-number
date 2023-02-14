@@ -9,10 +9,18 @@
 	<body>
 		<h1>Adivina el número</h1>
 		<h2>Introduce aquí tu número:</h2>
-		<input type="text" />
-		<input type="button" value="Prueba" />
-		<input type="text" placeholder="Pista: Escribe el número y dale a Prueba" />
-		<input type="text" placeholder="Número de intentos: 0" />
+		<input type="text" class="js-choice" />
+		<input type="button" value="Prueba" class="js-btn" />
+		<input
+			type="text"
+			placeholder="Pista: Escribe el número y dale a Prueba"
+			class="js-clue"
+		/>
+		<input
+			type="text"
+			placeholder="Número de intentos: 0"
+			class="js-attempts"
+		/>
 		<script src="./js/main.js"></script>
 	</body>
 </html>
