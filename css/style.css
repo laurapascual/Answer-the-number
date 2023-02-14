@@ -1,0 +1,48 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	color: rgba(88, 83, 83);
+	margin: 20px 20px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: 300px;
+	font-size: 20px;
+}
+
+.btn {
+	width: 90px;
+	height: 30px;
+	background-color: #0098f0;
+	border: #0098f0;
+	border-radius: 4px;
+	color: white;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.choice {
+	width: 200px;
+	height: 30px;
+	border-radius: 4px;
+	background-color: rgba(226, 225, 225);
+	border-color: rgba(226, 225, 225);
+	font-size: 16px;
+}
+
+.input {
+	font-size: 16px;
+	width: 400px;
+	border: solid 2px rgb(212, 212, 212);
+	padding: 4px;
+}
