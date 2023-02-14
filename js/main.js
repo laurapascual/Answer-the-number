@@ -25,22 +25,22 @@ function attemptsNumber() {
     printAttempts(`Número de intentos: ${sumAttempts}`);
 }
 
-function handleBtnClick(event) {
+function handleCompare() {
     const userChoice = parseInt(choiceEl.value);
-    attemptsNumber();
     if (userChoice > randomNumber && userChoice <= 100) {
         printClue('Demasiado alto');
-        
-    } else if (userChoice < randomNumber) {
+    } else if (userChoice < randomNumber && userChoice >= 1) {
         printClue('Demasiado bajo');
     } else if (userChoice === randomNumber) {
         printClue('Has ganado campeona!!!');
     } else {
-        if(randomNumber > 1 || randomNumber < 100) {
-            printClue('El número debe estar entre 1 y 100');
-        }
-        
-    }
+        printClue('El número debe estar entre 1 y 100');
+    }    
+}
+
+function handleBtnClick(event) {
+    handleCompare();
+    attemptsNumber();
 }
 
 
