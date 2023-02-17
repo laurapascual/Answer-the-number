@@ -47,10 +47,18 @@ function handleCompare() {
     }    
 }
 
-function handleBtnClick(event) {
+function handleBtnClick() {
     handleCompare();
-    attemptsNumber();
+    attemptsNumber();    
 }
+
+function handleEnter(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        handleBtnClick();
+    }
+}
+
 
 function handleBtnReset() {
     attemptsNumberReset();
@@ -62,3 +70,4 @@ function handleBtnReset() {
 
 btnEl.addEventListener('click', handleBtnClick);
 btnReset.addEventListener('click', handleBtnReset);
+choiceEl.addEventListener('keypress', handleEnter);
