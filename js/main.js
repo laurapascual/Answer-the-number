@@ -4,7 +4,8 @@ const btnEl = document.querySelector('.js-btn');
 const choiceEl = document.querySelector('.js-choice');
 const clueEl = document.querySelector('.js-clue');
 const attemptsEl = document.querySelector('.js-attempts');
-const randomNumber = getRandomNumber(100);
+const btnReset = document.querySelector('.js-reset');
+let randomNumber = getRandomNumber(100);
 let sumAttempts = 0;
 
 function getRandomNumber(max) {
@@ -22,6 +23,11 @@ function printAttempts(number) {
 
 function attemptsNumber() {
     sumAttempts++;
+    printAttempts(`Número de intentos: ${sumAttempts}`);
+}
+
+function attemptsNumberReset() {
+    sumAttempts = 0;
     printAttempts(`Número de intentos: ${sumAttempts}`);
 }
 
@@ -46,4 +52,13 @@ function handleBtnClick(event) {
     attemptsNumber();
 }
 
+function handleBtnReset() {
+    attemptsNumberReset();
+    printClue('Pista: Escribe el número y dale a Prueba');
+    randomNumber = getRandomNumber(100);
+    console.log('Mi número aleatorio es: ' + randomNumber);
+    choiceEl.value = "";
+}
+
 btnEl.addEventListener('click', handleBtnClick);
+btnReset.addEventListener('click', handleBtnReset);
