@@ -4,13 +4,25 @@
 	padding: 0;
 }
 
+.body {
+	background-image: url(../images/172.jpg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: center;
 	color: rgba(88, 83, 83);
+	background-color: white;
 	margin: 20px 20px;
-	font-family: "Roboto", sans-serif;
+	font-family: "Chivo Mono", monospace;
+	width: 500px;
+	height: 300px;
+	border-radius: 10px;
 }
 
 .form {
@@ -24,8 +36,8 @@
 .btn {
 	width: 90px;
 	height: 30px;
-	background-color: #0098f0;
-	border: #0098f0;
+	background-color: #d64e59;
+	border: #d64e59;
 	border-radius: 6px;
 	color: white;
 	font-size: 16px;
