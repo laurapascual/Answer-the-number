@@ -23,6 +23,11 @@
 	width: 500px;
 	height: 300px;
 	border-radius: 10px;
+	@media (min-width: 1024px) {
+		font-size: 25px;
+		width: 700px;
+		height: 400px;
+	}
 }
 
 .form {
@@ -31,6 +36,10 @@
 	gap: 5px;
 	width: 300px;
 	font-size: 20px;
+	@media (min-width: 1024px) {
+		width: 500px;
+		font-size: 30px;
+	}
 }
 
 .btn {
@@ -42,6 +51,11 @@
 	color: white;
 	font-size: 16px;
 	font-weight: 600;
+	@media (min-width: 1024px) {
+		width: 150px;
+		height: 40px;
+		font-size: 25px;
+	}
 }
 
 .reset {
@@ -53,6 +67,11 @@
 	border-radius: 6px;
 	font-size: 16px;
 	font-weight: 600;
+	@media (min-width: 1024px) {
+		width: 150px;
+		height: 40px;
+		font-size: 25px;
+	}
 }
 
 .choice {
@@ -62,6 +81,10 @@
 	background-color: rgba(226, 225, 225);
 	border-color: rgba(226, 225, 225);
 	font-size: 16px;
+	@media (min-width: 1024px) {
+		width: 400px;
+		font-size: 25px;
+	}
 }
 
 .p {
@@ -70,4 +93,8 @@
 	width: 400px;
 	border: solid 2px rgb(212, 212, 212);
 	padding: 4px;
+	@media (min-width: 1024px) {
+		width: 500px;
+		font-size: 20px;
+	}
 }
